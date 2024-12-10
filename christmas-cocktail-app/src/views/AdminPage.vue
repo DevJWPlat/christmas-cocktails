@@ -4,6 +4,7 @@
     <p>To begin please click the team who are currently presenting their cocktail. </p>
     <div class="button-container">
       <button @click="navigateTo('/hlj')">Hannah, Louis & Jack</button>
+      <button @click="navigateTo('/vote')">test</button>
     </div>
   </div>
 </template>

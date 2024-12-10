@@ -1,7 +1,9 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import AdminPage from '../views/AdminPage.vue';
-import hlj from '@/views/hlj.vue';
+import AdminPage from '../views/AdminPage.vue'
+import hlj from '@/views/hlj.vue'
+import VotingPage from '../views/VotingPage.vue';
+
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -17,16 +19,17 @@ const routes: Array<RouteRecordRaw> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
-  { 
-    path: '/admin', 
-    name: 'AdminPage', 
-    component: AdminPage 
+  {
+    path: '/admin',
+    name: 'AdminPage',
+    component: AdminPage
   },
-  { 
-    path: '/hlj', 
-    name: 'hlj', 
-    component: hlj 
+  {
+    path: '/hlj',
+    name: 'hlj',
+    component: hlj
   },
+  { path: '/vote', name: 'Vote', component: VotingPage },
 ]
 
 const router = createRouter({

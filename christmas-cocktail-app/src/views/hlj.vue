@@ -11,7 +11,6 @@
         </button>
       </div>
       <div class="text">
-        <p>If this is the wrong team press back at the top of this screen.</p>
         <h3>Time to vote on Hannah, Louis & Jack's cocktail.</h3>
         <h4>Use the inputs below to vote for each category. (0 - 10)</h4>
       </div>
@@ -46,6 +45,10 @@
         <!-- Submit Button -->
         <button type="submit">Submit</button>
       </form>
+      <div class="text">
+        <p>If this is the wrong team press back at the top of this screen.</p>
+      </div>
+
     </div>
 
   </template>
@@ -72,7 +75,7 @@
         flex-direction: column;
         text-align: left;
         h3 {
-            margin-top: 0;
+            margin-top: 20px;
             font-size: 24px;
         }
         p {
